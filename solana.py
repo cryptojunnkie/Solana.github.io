@@ -10,7 +10,7 @@ import plotly.io as pio
 # Set the Plotly template to use the "plotly_white" theme
 pio.templates.default = "plotly_white"
 
-# Retrieve historical BTC price data up to the current date
+# Retrieve historical Solana price data up to the current date
 btc_data = si.get_data("SOL-USD", start_date="05/19/2020", end_date=date.today(), index_as_date=True, interval="1d")
 
 # Extract date and price data
@@ -27,12 +27,12 @@ price_high = np.max(y_fit)
 price_low = np.min(y_fit)
 
 # Create the Plotly traces
-trace1 = go.Scatter(x=x, y=y, mode='lines', name='BTC Price', line={'color': 'black', 'width': 0.75})
+trace1 = go.Scatter(x=x, y=y, mode='lines', name='Solana Price', line={'color': 'black', 'width': 0.75})
 trace2 = go.Scatter(x=x, y=y_fit, mode='lines', name='Smoothed Polynomial Regression Curve', line={'color': 'red', 'width': 2})
 
 # Create the additional channels
 additional_traces = []
-channel_distance = 30  # $5,000 distance between channels
+channel_distance = 30  # $30 distance between channels
 
 # Lower channel and upper channel color palettes
 lower_channel_colors = ['#F1C40F', '#2ECC71', '#3498DB', '#9B59B6']

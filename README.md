@@ -7,7 +7,7 @@ Polynomial Reversion Chart
 Clone the repository
 Go to the folder where you want to store your project, and clone the new repository:
 
-git clone https://github.com/cryptojunnkie/cryptojunnkie.github.io
+git clone https://github.com/cryptojunnkie/Solana.github.io
 
 Hello World
 Enter the project folder and add an index.html file:
